@@ -8,4 +8,10 @@ editor_options:
   chunk_output_type: console
 ---
 
-Welcome to my research website.
+Welcome to my Journal club website `r "\U1F44B"`!!!.
+
+## Presentation for 2021/07/05 JC
+
+```{r embed-xaringan, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "JC1.html", ratio = "4:3")
+```
