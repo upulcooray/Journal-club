@@ -4,6 +4,11 @@ subtitle: |
   Future proof your projects with ![](jc1/img/r-logo-tiny.png)
 author: "Upul Cooray"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
+knit: (function(inputFile, encoding) { 
+      out_dir <- '../docs';
+      rmarkdown::render(inputFile,
+                        encoding=encoding, 
+                        output_file=file.path(dirname(inputFile), out_dir, 'JC1.html')) })
 output:
   xaringan::moon_reader:
     css: 
@@ -20,6 +25,7 @@ output:
       ratio: "14:9"
     includes:
       after_body: [jc1/css/insert-logo.html]
+
 ---
 
 ```{r setup, include = FALSE}
@@ -111,6 +117,7 @@ class: inverse, middle, center
 
 # Main features of reproducible workflow
 <hr>
+--
 
 `r "\U1F5C4️"`  Well organized
 
@@ -148,27 +155,30 @@ class: one
 <hr>
 
 --
+
 * Remember, being _.purple[partially reproducible]_ is better than _.red[not at all reproducible]_. 
 Just try to make your next paper or project better organized than the last.
 
 --
+
 * Identify **one weakness** in your current approach, adopt an improved approach, refine that a bit, 
 and then move on to the next thing.
 
 --
+
 * Practice ![](jc1/img/r-logo-tiny.png) by translating your old `stata` projects to ![](jc1/img/r-logo-tiny.png) 
 
 --
+
 * Do everything with a script(`.do` files if in stata) 
 
 --
-* Organize everything within one folder
 
---
 * Separate row data from derived data
 
 --
-* Choose file names carefully (don't use things like `_final`)
+
+* Organize everything within one folder/ choose file names carefully (don't use things like `_final`)
 
 ---
 class: inverse
