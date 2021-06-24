@@ -1,0 +1,83 @@
+<!--Hat-tip: https://www.garrickadenbuie.com/blog/xaringan-tip-logo-all-slides/-->
+<style>
+.logo-top {
+  background-image: url(img/logo-top.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0.1em;
+  right: 0.1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<style>
+.logo-down {
+  background-image: url(img/logo-down.jpg);
+  background-size: 200px auto;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 91%;
+  left:  4em;
+  width: 200px;
+  height: 128px;
+
+}
+</style>
+
+<style>
+.bottom-line {
+  height:             1px;
+  display:            block;
+  border:             none;
+  background-color:   #C417AA;
+  position: absolute;
+  top: 95%;
+  left: 4em;
+  right: 80px;
+
+}
+</style>
+
+<style>
+
+.foot {
+  position:           absolute;
+  bottom:             2px;
+  right:             80px;
+  font-size:          75%;
+  font-style:      italic;
+  color:             grey;
+  line-height:        1em;
+
+}
+</style>
+
+
+<script>
+
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo-top"></div>'+       /*Tohoku university logo*/
+                    '<div class="logo-down"></div>'+         /*IADR  logo*/
+                    '<div class="foot">Journal Club: 05/07/2021 by Upul Cooray</div>'+  /* footer */
+                    '<hr class="bottom-line" />' ;        /* Thin horizontal line in the bottom */
+  });
+</script>
+
+
+
+
+
+
+
+
