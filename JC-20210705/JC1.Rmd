@@ -4,11 +4,6 @@ subtitle: |
   Future proof your projects with ![](jc1/img/r-logo-tiny.png)
 author: "Upul Cooray"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-knit: (function(inputFile, encoding) { 
-      out_dir <- '../docs';
-      rmarkdown::render(inputFile,
-                        encoding=encoding, 
-                        output_file=file.path(dirname(inputFile), out_dir, 'JC1.html')) })
 output:
   xaringan::moon_reader:
     css: 
